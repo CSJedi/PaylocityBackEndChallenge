@@ -18,7 +18,7 @@ This project is a back-end solution for a hypothetical payroll system, implement
 1. Clone the repository.
 2. Open the project in Visual Studio or your preferred IDE.
 3. Make sure you have the necessary dependencies installed.
-4. Update the `appsettings.json` file with your database connection string if needed.
+4. Update the `Data Source=..\\..\\products.sqlite` with your database connection string if needed.
 5. Run the following commands in the Package Manager Console to update the database:
    ```bash
    Update-Database
@@ -37,6 +37,7 @@ This project is a back-end solution for a hypothetical payroll system, implement
 - `/api/v1/dependents`: Get all dependents or create a new dependent.
 - `/api/v1/dependents/{id}`: Get, update, or delete a dependent by ID.
 - `/api/v1/paychecks`: Get all paychecks for employees.
+- `/api/v1/paychecks/{employeeId}`: Get paychecks for employee by employeeID.
 
 ## How to Contribute
 
