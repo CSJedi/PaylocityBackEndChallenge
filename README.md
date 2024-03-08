@@ -1,25 +1,52 @@
-# What is this?
+# Paylocity Back-End Challenge
 
-A project seed for a C# dotnet API ("PaylocityBenefitsCalculator").  It is meant to get you started on the Paylocity BackEnd Coding Challenge by taking some initial setup decisions away.
+## Description
 
-The goal is to respect your time, avoid live coding, and get a sense for how you work.
+This project is a back-end solution for a hypothetical payroll system, implementing features such as calculating employee paychecks based on various factors like salary, dependents, and benefits costs.
 
-# Coding Challenge
+## Technologies Used
 
-**Show us how you work.**
+- C#
+- ASP.NET Core
+- Entity Framework Core
+- SQLite
+- AutoMapper
+- Swagger
 
-Each of our Paylocity product teams operates like a small startup, empowered to deliver business value in
-whatever way they see fit. Because our teams are close knit and fast moving it is imperative that you are able
-to work collaboratively with your fellow developers. 
+## Setup
 
-This coding challenge is designed to allow you to demonstrate your abilities and discuss your approach to
-design and implementation with your potential colleagues. You are free to use whatever technologies you
-prefer but please be prepared to discuss the choices you’ve made. We encourage you to focus on creating a
-logical and functional solution rather than one that is completely polished and ready for production.
+1. Clone the repository.
+2. Open the project in Visual Studio or your preferred IDE.
+3. Make sure you have the necessary dependencies installed.
+4. Update the `appsettings.json` file with your database connection string if needed.
+5. Run the following commands in the Package Manager Console to update the database:
+   ```bash
+   Update-Database
+   ```
+6. Build the project.
 
-The challenge can be used as a canvas to capture your strengths in addition to reflecting your overall coding
-standards and approach. There’s no right or wrong answer.  It’s more about how you think through the
-problem. We’re looking to see your skills in all three tiers so the solution can be used as a conversation piece
-to show our teams your abilities across the board.
+## How to Run
 
-Requirements will be given separately.
+1. Start the project.
+2. Use a tool like Postman or Swagger UI to interact with the API endpoints.
+
+## API Endpoints
+
+- `/api/v1/employees`: Get all employees or create a new employee.
+- `/api/v1/employees/{id}`: Get, update, or delete an employee by ID.
+- `/api/v1/dependents`: Get all dependents or create a new dependent.
+- `/api/v1/dependents/{id}`: Get, update, or delete a dependent by ID.
+- `/api/v1/paychecks`: Get all paychecks for employees.
+
+## How to Contribute
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes.
+4. Commit your changes (`git commit -am 'Add new feature'`).
+5. Push to the branch (`git push origin feature-branch`).
+6. Create a new Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

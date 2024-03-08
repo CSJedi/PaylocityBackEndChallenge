@@ -14,11 +14,13 @@ public class DependentRepository : IDependentRepository
         _context = context;
     }
 
+    // Get all dependents asynchronously
     public async Task<IEnumerable<Dependent>> GetAllDependentsAsync()
     {
         return await _context.Dependents.ToListAsync();
     }
 
+    // Get dependent by id asynchronously
     public async Task<Dependent> GetDependentByIdAsync(int id)
     {
         return await _context.Dependents.FindAsync(id);
